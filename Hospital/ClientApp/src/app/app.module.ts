@@ -9,7 +9,8 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
-import { CustomerFormComponent } from './customer/form/customer-reg-form.component';
+import { CustomerFormComponent } from './customer/customer-reg-form.component';
+import { CustomerListComponent } from './customer/customer-reg-list.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CustomerFormComponent } from './customer/form/customer-reg-form.compone
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
-    CustomerFormComponent
+    CustomerFormComponent,
+    CustomerListComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -28,7 +30,8 @@ import { CustomerFormComponent } from './customer/form/customer-reg-form.compone
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
-      { path: 'customer/form', component: CustomerFormComponent }
+      { path: 'customer/form', component: CustomerFormComponent },
+      { path: 'customer/list', component: CustomerListComponent }
     ])
   ],
   providers: [],
