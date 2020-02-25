@@ -11,8 +11,13 @@ namespace Hospital.Controllers
     {
         private List<Customer> customers = new List<Customer>
         {
-            new Customer(12, "Leonardo", "Balzaretti"),
+            new Customer(12, "Leonardo", "Balzaretti"){
+                Weight = 50
+            },
             new Customer(13, "Maria", "Heloisa")
+            {
+                Weight = 120
+            }
         };
         private readonly ILogger<CustomerController> _logger;
 

@@ -5,7 +5,7 @@ export class Customer {
   email: string;
   birthday: Date;
   height: number;
-  width: number;
+  weight: number;
   bloodType: string;
 
   constructor(id: number, name: string, lastName: string, bloodType: string) {

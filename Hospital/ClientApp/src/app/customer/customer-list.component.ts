@@ -4,27 +4,15 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-customer-form',
-  templateUrl: './customer-reg-list.component.html',
-  styleUrls: ['./customer-reg-list.component.css']
+  templateUrl: './customer-list.component.html',
+  styleUrls: ['./customer-list.component.css']
 })
 export class CustomerListComponent {
-  public customers: ICustomer[];
+  public customers: Customer[];
 
   constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
-    http.get<ICustomer[]>(baseUrl + 'customer').subscribe(result => {
+    http.get<Customer[]>(baseUrl + 'customer').subscribe(result => {
       this.customers = result;
     }, error => console.error(error));
   }
 }
-
-interface ICustomer {
-  id: number;
-  name: string;
-  lastName: string;
-  email: string;
-  birthday: Date;
-  height: number;
-  width: number;
-  bloodType: string;
-}
-

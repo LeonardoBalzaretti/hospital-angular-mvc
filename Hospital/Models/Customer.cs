@@ -13,7 +13,7 @@ namespace Hospital.Models
 		public string Email { get; set; }
 		public DateTime Birthday { get; set; }
 		public float Height { get; set; }
-		public float Width { get; set; }
+		public int Weight { get; set; }
 		public string BloodType { get; set; }
 
 		public Customer(int id, string name, string lastName)

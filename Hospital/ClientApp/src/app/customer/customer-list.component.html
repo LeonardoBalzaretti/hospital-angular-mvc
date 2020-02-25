@@ -4,6 +4,7 @@
       <th>Id</th>
       <th>Name</th>
       <th>Last Name</th>
+      <th>Weight</th>
     </tr>
   </thead>
   <tbody>
@@ -11,6 +12,12 @@
       <td>{{ customer.id }}</td>
       <td>{{ customer.name }}</td>
       <td>{{ customer.lastName }}</td>
+      <td>
+        {{ customer.weight }}
+        <customer-weight-alert [customer]="customer">
+        </customer-weight-alert>
+      </td>
     </tr>
   </tbody>
 </table>
+<a class="nav-link" [routerLink]="['/customer/form']">Customer form</a>

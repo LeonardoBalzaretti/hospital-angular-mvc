@@ -10,7 +10,9 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { CustomerFormComponent } from './customer/customer-reg-form.component';
-import { CustomerListComponent } from './customer/customer-reg-list.component';
+import { CustomerListComponent } from './customer/customer-list.component';
+import { CustomerWeightAlertsComponent } from './customer/customer-weight-alert.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { CustomerListComponent } from './customer/customer-reg-list.component';
     CounterComponent,
     FetchDataComponent,
     CustomerFormComponent,
-    CustomerListComponent
+    CustomerListComponent,
+    CustomerWeightAlertsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
